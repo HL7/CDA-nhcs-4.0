@@ -2,7 +2,7 @@
 <!--
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LANTANA CONSULTING GROUP LLC, OR ANY OF THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Schematron generated from Trifolia on 4/11/2025
+Schematron generated from Trifolia on 4/13/2025
 -->
 <sch:schema xmlns:voc="http://www.lantanagroup.com/voc" xmlns:svs="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:ns prefix="voc" uri="http://www.lantanagroup.com/voc" />
@@ -3906,7 +3906,7 @@ Schematron generated from Trifolia on 4/11/2025
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.3-2025-08-01-errors" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.22.2.3' and @extension='2025-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.3-2025-08-01-errors-abstract" />
-      <sch:assert id="a-5564-33223" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.3'][@extension='2015-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-33223) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.3" (CONF:5564-33225). SHALL contain exactly one [1..1] @extension="2015-08-01" (CONF:5564-33226).</sch:assert>
+      <sch:assert id="a-5564-33223" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.3'][@extension='2025-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-33223) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.3" (CONF:5564-33225). SHALL contain exactly one [1..1] @extension="2025-08-01" (CONF:5564-33226).</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.1-2025-08-01-errors">
@@ -3994,12 +3994,12 @@ Schematron generated from Trifolia on 4/11/2025
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.1.1-2025-08-01-errors" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.22.2.1.1' and @extension='2025-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.1.1-2025-08-01-errors-abstract" />
-      <sch:assert id="a-5564-7568" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.1.1'][@extension='2014-06-09'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-7568) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.1.1" (CONF:5564-10433). SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:5564-32499).</sch:assert>
+      <sch:assert id="a-5564-7568" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.1.1'][@extension='2025-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-7568) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.1.1" (CONF:5564-10433). SHALL contain exactly one [1..1] @extension="2025-08-01" (CONF:5564-32499).</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.2.56-2025-08-01-errors">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.56-2025-08-01-errors-abstract" abstract="true">
-      <sch:assert id="a-5564-28293" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.56'][@extension='2015-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-28293) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.56" (CONF:5564-28294). SHALL contain exactly one [1..1] @extension="2015-08-01" (CONF:5564-32793).</sch:assert>
+      <sch:assert id="a-5564-28293" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.56'][@extension='2025-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-28293) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.56" (CONF:5564-28294). SHALL contain exactly one [1..1] @extension="2025-08-01" (CONF:5564-32793).</sch:assert>
       <sch:assert id="a-5564-28295" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:5564-28295).</sch:assert>
       <sch:assert id="a-5564-28296" test="cda:code[@code='10190-7']">This code SHALL contain exactly one [1..1] @code="10190-7" Mental Status (CONF:5564-28296).</sch:assert>
       <sch:assert id="a-5564-30826" test="cda:code[@codeSystem='2.16.840.1.113883.6.1']">This code SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.1" (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:5564-30826).</sch:assert>
@@ -4020,7 +4020,7 @@ Schematron generated from Trifolia on 4/11/2025
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.14-2025-08-01-errors" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.22.2.14' and @extension='2025-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.2.14-2025-08-01-errors-abstract" />
-      <sch:assert id="a-5564-7920" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.14'][@extension='2014-06-09'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-7920) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.14" (CONF:5564-10389). SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:5564-32567).</sch:assert>
+      <sch:assert id="a-5564-7920" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.2.14'][@extension='2025-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-7920) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.2.14" (CONF:5564-10389). SHALL contain exactly one [1..1] @extension="2025-08-01" (CONF:5564-32567).</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.15.3.1-warnings">
