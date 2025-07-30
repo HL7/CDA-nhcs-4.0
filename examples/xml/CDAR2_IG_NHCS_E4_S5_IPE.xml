@@ -14,14 +14,14 @@
 
 <!--  
     Title: NHCS Inpatient Encounter Sample File
-    File Name: CDAR2_IG_NHCS_R1_STU4_IPE.xml
+    File Name: CDAR2_IG_NHCS_E4_S5_IPE.xml
     Created by: Lantana Consulting Group, Inc.
         
     Description: This document conforms to the HL7 CDA® R2 Implementation Guide: 
-    National Health Care Surveys Release 1, STU Release 4 - US Realm
+    National Health Care Surveys (NHCS), Edition 4 - US Realm
   -->
 
-<?xml-stylesheet type="text/xsl" href="../../../LOCAL-GIT-SOURCE/HL7-RESOURCES/CDA-core-xsl-master/CDA.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../stylesheet/cda.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
 
   <!--  
@@ -33,9 +33,9 @@
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
   <!--  [C-CDA R2.1] US Realm Header (V4)  -->
   <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2023-05-01"/>
-  <!--  [NHCS STU4] National Health Care Surveys Document (V6)  -->
+  <!--  [NHCS E4 S5] National Health Care Surveys Document (V6)  -->
   <templateId root="2.16.840.1.113883.10.20.34.1.1" extension="2025-08-01"/>
-  <!--  [NHCS STU4] In-Patient Encounter (NHCS-IP) (V7) requirements  -->
+  <!--  [NHCS E4 S5] In-Patient Encounter (NHCS-IP) (V7) requirements  -->
   <templateId root="2.16.840.1.113883.10.20.34.1.2" extension="2025-08-01"/>
   <!--  ID shall be a globally unique identifier  -->
   <id root="fc5a3b0c-e08b-45c2-8fc1-65046113e1d7"/>
@@ -335,7 +335,7 @@
         <section>
           <!--  [Updated C-CDA R2.1] Encounters Section (entries optional) (NHCS V4)  -->
           <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2025-08-01"/>
-          <!--  [NHCS STU4] Inpatient Encounters Section (V5)  -->
+          <!--  [NHCS E4 S5] Inpatient Encounters Section (V5)  -->
           <templateId root="2.16.840.1.113883.10.20.34.2.12" extension="2025-08-01"/>
           <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
           <title>Inpatient Encounter</title>
@@ -360,7 +360,7 @@
             <encounter classCode="ENC" moodCode="EVN">
               <!--  [Updated C-CDA] Encounter Activity (NHCS V4)  -->
               <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2025-08-01"/>
-              <!--  [NHCS STU4] Current Inpatient Visit (V4)  -->
+              <!--  [NHCS E4 S5] Current Inpatient Visit (V4)  -->
               <templateId root="2.16.840.1.113883.10.20.34.3.39" extension="2025-08-01"/>
               <!--  This id is the same as the encompassingEncounter id  -->
               <id root="57edf80c-7114-4dc3-b3f4-abf515d18c90"/>
@@ -374,7 +374,7 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
-                  <!--  [NHCS STU4] Primary Diagnosis Observation (V5)  -->
+                  <!--  [NHCS E4 S5] Primary Diagnosis Observation (V5)  -->
                   <templateId root="2.16.840.1.113883.10.20.34.3.6" extension="2025-08-01"/>
                   <id root="7d49bb4a-4764-4126-82dd-dcfe7901f701"/>
                   <code code="18630-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary Diagnosis"/>
@@ -415,7 +415,7 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
-                  <!--  [NHCS STU4] Principal Diagnosis (V3)  -->
+                  <!--  [NHCS E4 S5] Principal Diagnosis (V3)  -->
                   <templateId root="2.16.840.1.113883.10.20.24.3.152" extension="2025-08-01"/>
                   <id root="92587992-6147-467e-8ce7-b080ef569df4"/>
                   <code code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal Diagnosis" codeSystemName="SNOMED"/>
@@ -2316,7 +2316,7 @@
             <procedure classCode="PROC" moodCode="EVN">
               <!--  [Updated C-CDA R2] Procedure Activity Procedure (NHCS V4)  -->
               <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2025-08-01"/>
-              <!--  [NHCS STU4] Procedure Acitivity Procedure (UDI) (V2)  -->
+              <!--  [NHCS E4 S5] Procedure Acitivity Procedure (UDI) (V2)  -->
               <templateId root="2.16.840.1.113883.10.20.34.3.46" extension="2025-08-01"/>
               <id root="a5b614bd-01ce-410d-8726-e1fd01dcc72a"/>
               <code code="609153008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Percutaneous insertion of drug eluting stent into coronary artery using fluoroscopic guidance (procedure)">
@@ -2955,7 +2955,7 @@
         <section>
           <!--  [Updated C-CDA R2] Social History Section (NHCS V4)  -->
           <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2025-08-01"/>
-          <!--  [NHCS STU4] NHCS Social History Section (V3)  -->
+          <!--  [NHCS E4 S5] NHCS Social History Section (V3)  -->
           <templateId root="2.16.840.1.113883.10.20.34.2.16" extension="2025-08-01"/>
           <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" codeSystemName="LOINC"/>
           <title>Social History</title>
