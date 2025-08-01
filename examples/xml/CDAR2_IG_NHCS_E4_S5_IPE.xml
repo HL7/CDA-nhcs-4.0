@@ -19,6 +19,7 @@
         
     Description: This document conforms to the HL7 CDA® R2 Implementation Guide: 
     National Health Care Surveys (NHCS), Edition 4 - US Realm
+    Specification Version: 4.0.0
   -->
 
 <?xml-stylesheet type="text/xsl" href="../../stylesheet/cda.xsl"?>
