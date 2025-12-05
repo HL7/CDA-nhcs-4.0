@@ -325,7 +325,7 @@
     <structuredBody>
       <!--  Sections:
         
-    REQUIRED
+    REQUIRED SECTIONS
     Emergency Department Encounters Section (V5)
     Chief Complaint and Reason for Visit Section with NullFlavor (V5)
     Discharge Medications Section (entries required) (NHCS V4)
@@ -337,7 +337,7 @@
     Results Section (entries optional) (NHCS V4)
     Vital Signs Section (entries required) (V3)
     
-    OPTIONAL
+    OPTIONAL SECTIONS
     Allergies and Intolerances Section (entries required) (NHCS V4)
     Assessment Section
     Care Teams Section (V2) 
@@ -2284,7 +2284,6 @@
                     <low value="20120815173215-0500"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="386807006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Memory impairment">
-                    
                   </value>
                 </observation>
               </entryRelationship>

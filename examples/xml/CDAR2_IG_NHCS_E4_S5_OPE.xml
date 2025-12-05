@@ -319,7 +319,7 @@
       <!--  Sections:
     SECTION NOT USED in OPE documents: Discharge Medications Section (entries required) (NHCS V4)
     
-    REQUIRED
+    REQUIRED SECTIONS
     Outpatient Encounters Section (V6)
     Chief Complaint and Reason for Visit Section with NullFlavor (V5)
     Payers Section (NHCS V4)
@@ -330,7 +330,7 @@
     Medications Section (entries required) (NHCS V3)
     Immunizations Section (entries required) (NHCS V4)
     
-    OPTIONAL
+    OPTIONAL SECTIONS
     Assessment Section
     Reason for Referral Section
     Care Teams Section (V2)
@@ -344,7 +344,6 @@
     Medical Equipment Section (NHCS V3)
     Allergies and Intolerances Section (entries required) (NHCS V4)
   -->
-    
       <component>
         <!--  
         ******************************************************** 
@@ -380,7 +379,7 @@
           <entry>
             <encounter classCode="ENC" moodCode="EVN">
               <!--  [Updated C-CDA] Encounter Activity (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.53" extension="2025-08-01"/>
               <!--  [NHCS R1D4] Current Outpatient Visit (V6)  -->
               <templateId root="2.16.840.1.113883.10.20.34.3.10" extension="2025-08-01" />
               <!--  This id is the same as the encompassingEncounter id  -->
@@ -393,8 +392,8 @@
               <entryRelationship typeCode="SUBJ">
                 <!--  This observation represents the primary diagnosis  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <!--  [NHCS E4 S5] Primary Diagnosis Observation (V5)  -->
                   <templateId root="2.16.840.1.113883.10.20.34.3.6" extension="2025-08-01"/>
                   <id root="7d49bb4a-4764-4126-82dd-dcfe7901f701" />
@@ -411,8 +410,8 @@
               <entryRelationship typeCode="SUBJ">
                 <!--  This observation represents the principal diagnosis  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <!--  [NHCS E4 S5] Principal Diagnosis (V3)  -->
                   <templateId root="2.16.840.1.113883.10.20.24.3.152" extension="2025-08-01"/>
                   <id root="92587992-6147-467e-8ce7-b080ef569df4" />
@@ -433,8 +432,8 @@
                   <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis" />
                   <entryRelationship typeCode="SUBJ">
                     <observation classCode="OBS" moodCode="EVN">
-                      <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                      <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                       <id root="7d49bb4a-4764-4126-82dd-dcfe7901f701" />
                       <code code="282291009" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                         <translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis" />
@@ -536,8 +535,8 @@
           </text>
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01" />
+              <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01" />
               <!--  [NHCS E4 S5] Patient's Reason for Visit (V2)  -->
               <templateId root="2.16.840.1.113883.10.20.34.3.41" extension="2025-08-01" />
               <id root="e88883d7-39b7-4550-b2b4-e34a4bddd78e" />
@@ -566,9 +565,9 @@
   -->
         <section>
           <!--  [Updated C-CDA R2.1] Immunizations Section (entries optional) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.28" extension="2025-08-01"/>
           <!--  [Updated C-CDA R2.1] Immunizations Section (entries required) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.29" extension="2025-08-01"/>
           <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunizations" />
           <title>Immunizations</title>
           <text>
@@ -597,7 +596,7 @@
           <entry typeCode="DRIV">
             <!--  [Updated C-CDA R2.1] Immunization Activity (NHCS V4)  -->
             <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-              <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.56" extension="2025-08-01"/>
               <id root="abe7d60e-942e-476f-ba88-41ebed6fa4fe" />
               <statusCode code="active" />
               <effectiveTime xsi:type="IVL_TS">
@@ -673,9 +672,9 @@
   -->
         <section>
           <!--  [Updated C-CDA R2] Medications Section (entries optional) (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.31" extension="2025-08-01"/>
           <!--  [Updated C-CDA R2] Medications Section (entries required) (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.32" extension="2025-08-01"/>
           <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE" />
           <title>Medications</title>
           <text>
@@ -704,7 +703,7 @@
           <entry typeCode="DRIV">
             <substanceAdministration classCode="SBADM" moodCode="EVN">
               <!--  [Updated C-CDA R2] Medication Activity (NHCS V3)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.58" extension="2025-08-01"/>
               <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66" />
               <statusCode code="active" />
               <effectiveTime xsi:type="IVL_TS">
@@ -728,9 +727,9 @@
                 </manufacturedProduct>
               </consumable>
               <entryRelationship typeCode="RSON">
-                <!--  [C-CDA] Indication (V2)  -->
+                <!--  [C-CDA] Indication (V3)  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2023-05-01"/>
                   <id root="e63166c7-6482-4a44-83a1-37ccdbde725b"/>
                   <code code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical finding"/>
                   <statusCode code="completed"/>
@@ -855,7 +854,7 @@
   -->
         <section>
           <!--  [Updated C-CDA R2.1] Payers Section (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.18" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.34" extension="2025-08-01"/>
           <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers" />
           <title>Payment Sources</title>
           <text>
@@ -1012,13 +1011,12 @@
   -->
         <section>
           <!--  [Updated C-CDA] Problem Section (entries optional) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.36" extension="2025-08-01"/>
           <!--  [Updated C-CDA] Problem Section (entries required) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.37" extension="2025-08-01"/>
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST" />
           <title>Problems</title>
-          <text>
-            <list>
+          <text><list>
               <item>Diagnosis <list>
                   <item>Kidney malrotation</item>
                   <item>Onset: July 3, 2021</item>
@@ -1048,7 +1046,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA R2.1] Problem Concern Act (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.62" extension="2025-08-01"/>
               <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de8" />
               <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
               <!--  The statusCode represents the need to continue tracking the problem  -->
@@ -1062,8 +1060,8 @@
               <entryRelationship typeCode="SUBJ">
                 <!--  This observation represents a diagnosis  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <id root="0d746213-e380-4ced-a835-bda0369e4c8c" />
                   <code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diagnosis" />
                   <!--  The statusCode reflects the status of the observation itself  -->
@@ -1080,7 +1078,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA R2.1] Problem Concern Act (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.62" extension="2025-08-01"/>
               <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de8" />
               <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
               <!--  The statusCode represents the need to continue tracking the problem  -->
@@ -1096,8 +1094,8 @@
                  conditions are now represented in the Problem 
                  Observation as the Co-Morbid Condition Observation has been retired  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <id root="b5d36d7f-37ec-48b9-a914-0706dea2a304" />
                   <code code="75323-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition" />
                   <!--  The statusCode reflects the status of the observation itself  -->
@@ -1114,7 +1112,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA R2.1] Problem Concern Act (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.62" extension="2025-08-01"/>
               <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de8" />
               <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
               <!--  The statusCode represents the need to continue tracking the problem  -->
@@ -1130,8 +1128,8 @@
                  diagnoses are now represented in the Problem 
                  Observation as the Asthma Diagnsis Observation has been retired  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <id root="ac01c12d-8947-4046-845b-8c8ea220f861" />
                   <code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diagnosis" />
                   <!--  The statusCode reflects the status of the observation itself  -->
@@ -1149,7 +1147,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA R2.1] Problem Concern Act (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.62" extension="2025-08-01"/>
               <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de8" />
               <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
               <!--  The statusCode represents the need to continue tracking the problem  -->
@@ -1163,8 +1161,8 @@
               <entryRelationship typeCode="SUBJ">
                 <!--  Injury or poisoning in a problem observation  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <id root="0beae416-311b-413b-b341-5c642bbb0523" />
                   <code code="404684003" codeSystem="2.16.840.1.113883.6.96" displayName="Finding" />
                   <statusCode code="completed" />
@@ -1186,9 +1184,9 @@
   -->
         <section>
           <!--  [Updated C-CDA] Procedures Section (entries optional) (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.7" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.38" extension="2025-08-01"/>
           <!--  [Updated C-CDA] Procedures Section (entries required) (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.39" extension="2025-08-01"/>
           <code code="47519-4" displayName="History of procedures" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Procedures</title>
           <text>
@@ -1223,7 +1221,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA R2] Procedure Activity Act (NHCS V3)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.63" extension="2025-08-01"/>
               <id root="30590de2-2fd4-42db-a130-6fd8cd4c9d2d" />
               <code code="37894004" displayName="Evaluation and management of new outpatient in office or other outpatient facility" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <translation code="99201" displayName="OFFICE OUTPATIENT NEW 10 MINUTES" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" />
@@ -1236,7 +1234,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA R2] Procedure Activity Act (NHCS V3)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.63" extension="2025-08-01"/>
               <id root="30590de2-2fd4-42db-a120-6cd8cd4c912d" />
               <code code="266724001" displayName="Weight-reducing diet education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <statusCode code="completed" />
@@ -1246,8 +1244,8 @@
           <!--  This entry represents a procedure service that has been provided  -->
           <entry>
             <procedure classCode="PROC" moodCode="EVN">
-              <!--  [Updated C-CDA R2] Procedure Activity Procedure (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2025-08-01"/>
+              <!--  [C-CDA R2] Procedure Activity Procedure (V3)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01"/>
               <id root="305c55e3-ff9d-4402-b34a-97da397cc29e" />
               <code code="30374004" displayName="Excision of uvula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <translation code="42140" displayName="UVULECTOMY EXCISION UVULA" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" />
@@ -1259,7 +1257,7 @@
           <entry>
             <!--  [Updated C-CDA R2] Procedure Activity Observation (NHCS V3)  -->
             <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.13" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.64" extension="2025-08-01"/>
               <id root="dc507ac6-cb15-4d21-9410-fb399a2b95f6" />
               <code code="22059005" displayName="Computerized tomography, bone density study" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <translation code="77078" displayName="CT BONE MINERL DENSITY STUDY 1/> SITS AXIAL SKE" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" />
@@ -1278,7 +1276,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Results Section (entries optional) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.3" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.40" extension="2025-08-01"/>
           <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnositc tests and/or   laboratory data"/>
           <title>Tests and Results</title>
           <text>
@@ -1339,8 +1337,8 @@
           </text>
           <entry typeCode="DRIV">
             <organizer classCode="BATTERY" moodCode="EVN">
-              <!--  [Updated C-CDA R2] Result Organizer (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2025-08-01"/>
+              <!--  [C-CDA R2] Result Organizer (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2023-05-01"/>
               <id root="7d5a02b0-67a4-11db-bd13-0800200c9a66" />
               <code code="16254007" displayName="Lipid panel" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <statusCode code="completed" />
@@ -1400,8 +1398,8 @@
           </entry>
           <entry typeCode="DRIV">
             <organizer classCode="BATTERY" moodCode="EVN">
-              <!--  [Updated C-CDA R2] Result Organizer (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2025-08-01"/>
+              <!--  [C-CDA R2] Result Organizer (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2023-05-01"/>
               <id root="0414aae7-9585-4831-9025-70aac576d682" />
               <code code="43396009" displayName="Hemoglobin A1c measurement" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <statusCode code="active" />
@@ -1425,8 +1423,8 @@
           </entry>
           <entry typeCode="DRIV">
             <organizer classCode="BATTERY" moodCode="EVN">
-              <!--  [Updated C-CDA R2] Result Organizer (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2025-08-01"/>
+              <!--  [C-CDA R2] Result Organizer (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2023-05-01"/>
               <id root="46b38a64-feaa-4cdc-8794-26bb481b6201" />
               <code code="271062006" displayName="Fasting blood glucose measurement" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <statusCode code="active" />
@@ -1450,8 +1448,8 @@
           </entry>
           <entry typeCode="DRIV">
             <organizer classCode="BATTERY" moodCode="EVN">
-              <!--  [Updated C-CDA R2] Result Organizer (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2025-08-01"/>
+              <!--  [C-CDA R2] Result Organizer (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2023-05-01"/>
               <id root="63f3320b-7a7c-41d9-bd31-6bca611849ee" />
               <code code="113075003" displayName="Creatinine measurement, serum" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <statusCode code="active" />
@@ -1620,9 +1618,9 @@
   -->
         <section>
           <!--  [Updated C-CDA] Allergies and Intolerances Section (entries optional) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.6" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.20" extension="2025-08-01"/>
           <!--  [Updated C-CDA] Allergies and Intolerances Section (entries required) (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.21" extension="2025-08-01"/>
           <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1"/>
           <title>Allergies, Adverse Reactions and Alerts</title>
           <text>
@@ -1650,7 +1648,7 @@
           <entry typeCode="DRIV">
             <act classCode="ACT" moodCode="EVN">
               <!--  [Updated C-CDA] Allergy Concern Act (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.51" extension="2025-08-01"/>
               <id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
               <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
               <text>
@@ -1678,9 +1676,9 @@
               <entryRelationship typeCode="SUBJ">
                 <observation classCode="OBS" moodCode="EVN">
                   <!--  [Updated C-CDA] Substance or Device Allergy - Intolerance Observation (NHCS V3)  -->
-                  <templateId root="2.16.840.1.113883.10.20.24.3.90" extension="2025-08-01"/>
+                  <templateId root="2.16.840.1.113883.10.20.34.3.66" extension="2025-08-01"/>
                   <!--  [Updated C-CDA] Allergy - Intolerance Observation (NHCS V3)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2025-08-01"/>
+                  <templateId root="2.16.840.1.113883.10.20.34.3.50" extension="2025-08-01"/>
                   <id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                   <text>
@@ -1727,7 +1725,7 @@
                   <entryRelationship typeCode="MFST" inversionInd="true">
                     <observation classCode="OBS" moodCode="EVN">
                       <!--  [Updated C-CDA] Reaction Observation (NHCS V3)  -->
-                      <templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2025-08-01"/>
+                      <templateId root="2.16.840.1.113883.10.20.34.3.65" extension="2025-08-01"/>
                       <id root="0506c036-adfb-4e6e-b9e1-eea76177ead5"/>
                       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                       <text>
@@ -1897,7 +1895,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Functional Status Section (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.25" extension="2025-08-01"/>
           <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment note"/>
           <title>Functional Status</title>
           <text>
@@ -1922,15 +1920,15 @@
           </text>
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <!-- [Updated C-CDA] Functional Status Organizer (NHCS V3)-->
-              <templateId root="2.16.840.1.113883.10.20.22.4.66" extension="2025-08-01" />
+              <!-- [C-CDA] Functional Status Organizer (V2)-->
+              <templateId root="2.16.840.1.113883.10.20.22.4.66" extension="2014-06-09" />
               <id root="a7bc1062-8649-42a0-833d-eed65bd017c9" />
               <code code="d5" displayName="Self-Care" codeSystem="2.16.840.1.113883.6.254" codeSystemName="ICF" />
               <statusCode code="completed" />
               <component>
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA] Functional Status Observation (NHCS V3)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2025-08-01"/>
+                  <!--  [C-CDA] Functional Status Observation (V2)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2014-06-09"/>
                   <id root="e4f9eb37-52ca-4e95-90f3-570dace107e6"/>
                   <code code="54522-8" displayName="Functional status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                     <originalText>
@@ -1975,7 +1973,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Goals Section (NHCS V2)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.60" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.26" extension="2025-08-01"/>
           <code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title>Goals</title>
           <text>
@@ -1983,8 +1981,8 @@
           </text>
           <entry>
             <observation classCode="OBS" moodCode="GOL">
-              <!--  [Updated C-CDA]Goal Observation (NHCS V3)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.121" extension="2025-08-01"/>
+              <!--  [C-CDA] Goal Observation (V2)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.121" extension="2022-06-01"/>
               <id extension="3241" root="1.2.840.114350.1.13.6289.1.7.2.737179"/>
               <code code="8689-2" displayName="History of Social function" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
               <text>
@@ -2054,7 +2052,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Health Concerns Section (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.27" extension="2025-08-01"/>
           <!--  <templateId root="2.16.840.1.113883.10.20.22.2.58"/>  -->
           <code code="75310-3" displayName="Health Concerns Document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title>Health Concerns</title>
@@ -2088,10 +2086,10 @@
             </table>
           </text>
           <entry>
-            <!--  [Updated C-CDA] Health Concern Act (NHCS V4)  -->
+            <!--  [C-CDA] Health Concern Act (V3)  -->
             <!--  Concern: Community Acquired Pneumonia  -->
             <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
               <id root="63c5e137-3024-46cc-951f-885ec69d9030"/>
               <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
               <!--  This Health Concern has a statusCode of active because it is an active concern  -->
@@ -2101,8 +2099,8 @@
               <effectiveTime value="20140302"/>
               <entryRelationship typeCode="REFR">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA R2.1] Problem Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2025-08-01"/>
+                  <!--  [C-CDA R2.1] Problem Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
                   <id root="59c5ca3e-662f-4e33-943f-2777ebc6227e"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55607006" displayName="Problem">
                     <translation codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="75326-9" displayName="Problem"/>
@@ -2136,10 +2134,10 @@
             </act>
           </entry>
           <entry>
-            <!--  [Updated C-CDA] Health Concern Act (NHCS V4)  -->
+            <!--  [C-CDA] Health Concern Act (V3)  -->
             <!--  Concern: Memory impairment  -->
             <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
               <id root="63c5e137-3024-46cc-951f-885ec69d9030"/>
               <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
               <!--  This Health Concern has a statusCode of active because it is an active concern  -->
@@ -2150,7 +2148,7 @@
               <entryRelationship typeCode="REFR">
                 <!--  [Updated C-CDA R2.1] Mental Status Observation (NHCS V4)  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2025-08-01"/>
+                  <templateId root="2.16.840.1.113883.10.20.34.3.59" extension="2025-08-01"/>
                   <id root="faa09c19-fa1f-4a6c-ae79-10a3b711550f"/>
                   <!--  In C-CDA R2.1 August 2015 this is a fixed code. SDWG may change to a value set in STU comment 1367  -->
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="373930000" displayName="Cognitive function finding">
@@ -2171,7 +2169,7 @@
             <!--  [Updated C-CDA] Substance or Device Allergy - Intolerance Observation (NHCS V3)  -->
             <!--  Concern: Allergy to caffeine / magnesium salicylate  -->
             <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.24.3.90" extension="2025-08-01 "/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.66" extension="2025-08-01"/>
               <id root="e4f9eb37-52ca-4e95-90f3-570dace107e9"/>
               <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
               <statusCode code="completed"/>
@@ -2227,7 +2225,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Medical Equipment Section (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.30" extension="2025-08-01"/>
           <!--  {NHCS STU 4] Medical Equipment Section (UDI) (V2)  -->
           <templateId root="2.16.840.1.113883.10.20.34.2.15" extension="2025-08-01"/>
           <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -2360,7 +2358,7 @@
           <entry>
             <!--  [Updated C-CDA] Medical Equipment Organizer (NHCS V2)  -->
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.135" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.57" extension="2025-08-01"/>
               <id root="3e414708-0e61-4d48-8863-484a2d473a02"/>
               <code code="303476002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Cardiovascular equipment">
                 <originalText>Cardiovascular equipment</originalText>
@@ -2374,7 +2372,7 @@
                 <supply classCode="SPLY" moodCode="EVN">
                   <!--  [C-CDA] Non-medicinal supply activity (V2)  -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09"/>
-                  <id root="39b5f1b4-a8e1-4ad7-8849-0deab10c97b1"/>
+                  <id root="39b5f1b4-a8e1-4ad7-8849-0deab10c97b2"/>
                   <statusCode code="completed"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <high value="20130703"/>
@@ -2404,8 +2402,8 @@
           <entry>
             <!--  Procedure Activity Procedure (UDI)  -->
             <procedure classCode="PROC" moodCode="EVN">
-              <!--  [Updated C-CDA R2] Procedure Activity Procedure (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2025-08-01"/>
+              <!--  [C-CDA R2] Procedure Activity Procedure (V3)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01"/>
               <!--  [NHCS E4 S5] Procedure Acitivity Procedure (UDI) (V2)  -->
               <templateId root="2.16.840.1.113883.10.20.34.3.46" extension="2025-08-01"/>
               <id root="a5b614bd-01ce-410d-8726-e1fd01dcc72a" />
@@ -2731,7 +2729,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Mental Status Section (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.33" extension="2025-08-01"/>
           <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative"/>
           <title>Mental Status</title>
           <text> Cognitive function: Memory impairment, August 15, 2012 </text>
@@ -2739,14 +2737,14 @@
             <!--  [C-CDA] Mental Status Organizer (V3)  -->
             <organizer classCode="CLUSTER" moodCode="EVN">
               <!--  [Updated C-CDA] Mental Status Organizer (NHCS V4)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.75" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.60" extension="2025-08-01"/>
               <id root="a7bc1062-8649-42a0-833d-ekd65bd013c9"/>
               <code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <statusCode code="completed"/>
               <component>
                 <observation classCode="OBS" moodCode="EVN">
                   <!--  [Updated C-CDA R2.1] Mental Status Observation (NHCS V4)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2025-08-01"/>
+                  <templateId root="2.16.840.1.113883.10.20.34.3.59" extension="2025-08-01"/>
                   <id root="a7bc1062-8649-42a0-833d-ekd65bd013c7"/>
                   <code code="373930000" displayName="Cognitive function finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <translation code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -2772,7 +2770,7 @@
   -->
         <section>
           <!--  [Updated C-CDA R2.0] Plan of Treatment Section (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.35" extension="2025-08-01"/>
           <code code="18776-5" displayName="Plan of Treatment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Plan of Treatment</title>
           <text>
@@ -2827,9 +2825,9 @@
           <!--  This entry represents a procedure service that has been ordered, 
              but not yet provided  -->
           <entry>
-            <!--  [Updated C-CDA R2] Planned Procedure (NHCS V4)  -->
+            <!--  [C-CDA R2] Planned Procedure (V3)  -->
             <procedure classCode="PROC" moodCode="RQO">
-              <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2022-06-01"/>
               <id root="93078631-5703-4c18-b4aa-f14042ca6e36" />
               <code code="112703008" displayName="Superficial biopsy of muscle" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <translation code="20200" displayName="BIOPSY MUSCLE SUPERFICIAL" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" />
@@ -2857,7 +2855,7 @@
           <entry>
             <!--  [Updated C-CDA] Nutrition Recommendation (NHCS V2)  -->
             <act moodCode="INT" classCode="ACT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.130" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.61" extension="2025-08-01"/>
               <id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c"/>
               <code code="61310001" displayName="Nutrition education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
               <statusCode code="active"/>
@@ -3044,7 +3042,7 @@
   -->
         <section>
           <!--  [Updated C-CDA R2] Social History Section (NHCS V4)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.41" extension="2025-08-01"/>
           <!--  [NHCS E4 S5] NHCS Social History Section (V3)  -->
           <templateId root="2.16.840.1.113883.10.20.34.2.16" extension="2025-08-01"/>
           <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" codeSystemName="LOINC" />
@@ -3190,10 +3188,10 @@
           <!--  Basic Occupation & Industry  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!--  [Updated C-CDA] Social History Observation (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2025-08-01"/>
-              <!--  [Updated C-CDA 2.1] Basic Occupation Observation (NHCS V2)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.503" extension="2025-08-01"/>
+              <!--  [C-CDA] Social History Observation (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01"/>
+              <!--  [C-CDA 2.1] Basic Occupation Observation  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.503" extension="2023-05-01"/>
               <id root="f4dce790-8328-11db-9fe1-0800200c9a45"/>
               <code code="11341-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of occupation"/>
               <statusCode code="completed" />
@@ -3208,10 +3206,10 @@
               <entryRelationship typeCode="REFR">
                 <!--  Basic Industry Observation)  -->
                 <observation classCode="OBS" moodCode="EVN">
-                  <!--  [Updated C-CDA] Social History Observation (NHCS V5)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2025-08-01"/>
-                  <!--  [Updated C-CDA 2.1] Basic Industry Observation (NHCS V2)  -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.504" extension="2025-08-01"/>
+                  <!--  [C-CDA] Social History Observation (V4)  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01"/>
+                  <!--  [C-CDA 2.1] Basic Industry Observation  -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.504" extension="2023-05-01"/>
                   <id root="f4dce790-8328-11db-9fe1-0800200c9a47"/>
                   <code code="86188-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of occupation industry"/>
                   <statusCode code="completed"/>
@@ -3246,10 +3244,10 @@
           <!--  Tribal Affiliation  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!--  [Updated C-CDA] Social History Observation (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2025-08-01"/>
-              <!--  [Updated C-CDA] Tribal Affiliation Observation (NHCS V2)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.506" extension="2025-08-01"/>
+              <!--  [C-CDA] Social History Observation (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01"/>
+              <!--  [C-CDA] Tribal Affiliation Observation  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.506" extension="2023-05-01"/>
               <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0bc"/>
               <code code="95370-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tribal affiliation"/>
               <statusCode code="completed"/>
@@ -3260,9 +3258,9 @@
           </entry>
           <!--  Disability Status  -->
           <entry>
-            <!--  [Updated C-CDA 2.1] Disability Status Observation (NHCS V2)  -->
+            <!--  [C-CDA 2.1] Disability Status Observation  -->
             <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.505" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.505" extension="2023-05-01"/>
               <code code="89571-4" displayName="Disability Status [CUBS]" codeSystem="2.16.840.1.113883.6.1"/>
               <statusCode code="completed"/>
               <effectiveTime value="20221111"/>
@@ -3283,9 +3281,9 @@
           </entry>
           <!--  Assessment Scale: Mental Status -->
           <entry>
-            <!--  [Updated C-CDA] Assessment Scale Observation (NHCS V3)  -->
+            <!--  [C-CDA] Assessment Scale Observation (V2)  -->
             <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
               <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0b"/>
               <code code="54614-3" displayName="Brief Interview for Mental Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <derivationExpr>Text description of the calculation</derivationExpr>
@@ -3308,8 +3306,8 @@
           <!--  Social History  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!--  [Updated C-CDA] Social History Observation (NHCS V5)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2025-08-01"/>
+              <!--  [C-CDA] Social History Observation (V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01"/>
               <id extension="64020-Z9311" root="1.2.840.114350.1.13.6289.1.7.1.1040.1"/>
               <code code="160476009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Social / personal history observable (observable entity)">
                 <translation code="8689-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Social function"/>
