@@ -2,7 +2,7 @@
 <!--
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LANTANA CONSULTING GROUP LLC, OR ANY OF THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Schematron generated from Trifolia on 12/10/2025
+Schematron generated from Trifolia on 12/11/2025
 -->
 <sch:schema xmlns:voc="http://www.lantanagroup.com/voc" xmlns:svs="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:ns prefix="voc" uri="http://www.lantanagroup.com/voc" />
@@ -3867,7 +3867,7 @@ Schematron generated from Trifolia on 12/10/2025
       <sch:assert id="a-5564-31029" test="cda:statusCode[@code and @code=document('CDAR2_IG_NHCS_E4_S5.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.11.20.9.39']/voc:code/@value]">This statusCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Result Status urn:oid:2.16.840.1.113883.11.20.9.39 STATIC 2014-09-01 (CONF:5564-31029).</sch:assert>
       <sch:assert id="a-5564-32378" test="cda:effectiveTime[count(cda:low)=1]">This effectiveTime SHALL contain exactly one [1..1] low (CONF:5564-32378).</sch:assert>
       <sch:assert id="a-5564-32379" test="cda:effectiveTime[count(cda:high)=1]">This effectiveTime SHALL contain exactly one [1..1] high (CONF:5564-32379).</sch:assert>
-      <sch:assert id="a-5564-32380-c" test="cda:component/cda:supply/cda:templateId[@root='2.16.840.1.113883.10.20.22.4.50'][@extension='2014-06-09'] or cda:component/cda:procedure/cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14'][@extension='2022-06-01']">Either Non-Medicinal Supply Activity (V2) (templateId:2.16.840.1.113883.10.20.22.4.50:2014-06-09) **OR** Procedure Activity Procedure (V2) (templateId:2.16.840.1.113883.10.20.22.4.14:2014-06-09) **SHALL** be present (CONF:5564-32380).</sch:assert>
+      <sch:assert id="a-5564-32380-c" test="cda:component/cda:supply/cda:templateId[@root='2.16.840.1.113883.10.20.22.4.50'][@extension='2014-06-09'] or cda:component/cda:procedure/cda:templateId[@root='2.16.840.1.113883.10.20.34.3.68'][@extension='2025-08-01']">Either Non-Medicinal Supply Activity (V2) (templateId:2.16.840.1.113883.10.20.22.4.50:2014-06-09) **OR** Procedure Activity Procedure (NHCS V4) (templateId:2.16.840.1.113883.10.20.34.3.68:2025-08-01) **SHALL** be present (CONF:5564-32380).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.34.3.57-2025-08-01-errors" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.34.3.57' and @extension='2025-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.34.3.57-2025-08-01-errors-abstract" />
