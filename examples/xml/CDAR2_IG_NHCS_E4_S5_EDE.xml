@@ -1373,8 +1373,8 @@
           <!--  This entry represents a procedure service that has been provided  -->
           <entry>
             <procedure classCode="PROC" moodCode="EVN">
-              <!--  [C-CDA R2] Procedure Activity Procedure (V3)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01"/>
+              <!--  [Updated C-CDA R2] Procedure Activity Procedure (NHCS V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.34.3.68" extension="2025-08-01"/>
               <id root="305c55e3-ff9d-4402-b34a-97da397cc29e" />
               <code code="30374004" displayName="Excision of uvula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <translation code="42140" displayName="UVULECTOMY EXCISION UVULA" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" />
@@ -2526,8 +2526,8 @@
           <entry>
             <!--  Procedure Activity Procedure (UDI)  -->
             <procedure classCode="PROC" moodCode="EVN">
-              <!--  [C-CDA R2] Procedure Activity Procedure (V3)  -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01"/>
+              <!--  [Updated C-CDA R2] Procedure Activity Procedure (NHCS V4)  -->
+              <templateId root="2.16.840.1.113883.10.20.34.3.68" extension="2025-08-01"/>
               <!--  [NHCS E4 S5] Procedure Acitivity Procedure (UDI) (V2)  -->
               <templateId root="2.16.840.1.113883.10.20.34.3.46" extension="2025-08-01"/>
               <id root="a5b614bd-01ce-410d-8726-e1fd01dcc72a" />
