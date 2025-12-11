@@ -1997,10 +1997,10 @@
             </table>
           </text>
           <entry>
-            <!--  [C-CDA] Health Concern Act (V3)  -->
+            <!--  [Updated C-CDA] Health Concern Act (NHCS V4)  -->
             <!--  Concern: Community Acquired Pneumonia  -->
             <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.67" extension="2025-08-01"/>
               <id root="63c5e137-3024-46cc-951f-885ec69d9030"/>
               <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
               <!--  This Health Concern has a statusCode of active because it is an active concern  -->
@@ -2045,10 +2045,10 @@
             </act>
           </entry>
           <entry>
-            <!--  [C-CDA] Health Concern Act (V3)  -->
+            <!--  [Updated C-CDA] Health Concern Act (NHCS V4)  -->
             <!--  Concern: Memory impairment  -->
             <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.67" extension="2025-08-01"/>
               <id root="63c5e137-3024-46cc-951f-885ec69d9030"/>
               <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
               <!--  This Health Concern has a statusCode of active because it is an active concern  -->
@@ -2080,7 +2080,7 @@
             <!--  [Updated C-CDA] Substance or Device Allergy - Intolerance Observation (NHCS V3)  -->
             <!--  Concern: Allergy to caffeine / magnesium salicylate  -->
             <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.24.3.90" extension="2025-08-01 "/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.66" extension="2025-08-01"/>
               <id root="e4f9eb37-52ca-4e95-90f3-570dace107e9"/>
               <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
               <statusCode code="completed"/>
@@ -2136,7 +2136,7 @@
   -->
         <section>
           <!--  [Updated C-CDA] Medical Equipment Section (NHCS V3)  -->
-          <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2025-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.34.2.30" extension="2025-08-01"/>
           <!--  {NHCS STU 4] Medical Equipment Section (UDI) (V2)  -->
           <templateId root="2.16.840.1.113883.10.20.34.2.15" extension="2025-08-01"/>
           <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -2269,7 +2269,7 @@
           <entry>
             <!--  [Updated C-CDA] Medical Equipment Organizer (NHCS V2)  -->
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.135" extension="2025-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.57" extension="2025-08-01"/>
               <id root="3e414708-0e61-4d48-8863-484a2d473a02"/>
               <code code="303476002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Cardiovascular equipment">
                 <originalText>Cardiovascular equipment</originalText>

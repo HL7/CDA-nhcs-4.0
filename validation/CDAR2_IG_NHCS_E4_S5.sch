@@ -34,6 +34,7 @@ Schematron generated from Trifolia on 12/11/2025
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.128-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.123-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.113-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.124-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.133-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.134-errors" />
@@ -153,7 +154,6 @@ Schematron generated from Trifolia on 12/11/2025
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.38-2022-06-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.5.7-2020-05-19-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.5.6-2019-10-01-errors" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.41-2022-06-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.69-2022-06-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.502-2022-06-01-errors" />
@@ -254,6 +254,7 @@ Schematron generated from Trifolia on 12/11/2025
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.128-warnings" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.123-warnings" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.113-warnings" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-warnings" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.124-warnings" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.133-warnings" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.134-warnings" />
@@ -372,7 +373,6 @@ Schematron generated from Trifolia on 12/11/2025
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.38-2022-06-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.5.7-2020-05-19-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.5.6-2019-10-01-warnings" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.41-2022-06-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.69-2022-06-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.502-2022-06-01-warnings" />
@@ -780,6 +780,30 @@ Schematron generated from Trifolia on 12/11/2025
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.113-errors" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.113']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.113-errors-abstract" />
       <sch:assert id="a-1098-29037" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.4.113'])=1">SHALL contain exactly one [1..1] templateId (CONF:1098-29037) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.113" (CONF:1098-29038).</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-errors">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-errors-abstract" abstract="true">
+      <sch:assert id="a-1098-7652" test="@classCode='PROC'">SHALL contain exactly one [1..1] @classCode="PROC" Procedure (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7652).</sch:assert>
+      <sch:assert id="a-1098-7653" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7653).</sch:assert>
+      <sch:assert id="a-1098-7654" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14'][@extension='2014-06-09'])=1">SHALL contain exactly one [1..1] templateId (CONF:1098-7654) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.14" (CONF:1098-10521). SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32506).</sch:assert>
+      <sch:assert id="a-1098-7655" test="count(cda:id) &gt; 0">SHALL contain at least one [1..*] id (CONF:1098-7655).</sch:assert>
+      <sch:assert id="a-1098-7656" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:1098-7656).</sch:assert>
+      <sch:assert id="a-1098-19206-c" test="count(cda:code/cda:originalText/cda:reference[@value])=0 or starts-with(cda:code/cda:originalText/cda:reference/@value, '#')">This reference/@value **SHALL** begin with a '#' and **SHALL** point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:1098-19206).</sch:assert>
+      <sch:assert id="a-1098-7661" test="count(cda:statusCode)=1">SHALL contain exactly one [1..1] statusCode (CONF:1098-7661).</sch:assert>
+      <sch:assert id="a-1098-7890-c" test="not(testable)">MethodCode **SHALL NOT** conflict with the method inherent in Procedure / code (CONF:1098-7890).</sch:assert>
+      <sch:assert id="a-1098-7704" test="not(cda:specimen) or cda:specimen[count(cda:specimenRole)=1]">The specimen, if present, SHALL contain exactly one [1..1] specimenRole (CONF:1098-7704).</sch:assert>
+      <sch:assert id="a-1098-16842-c" test="not(tested)">This specimen is for representing specimens obtained from a procedure (CONF:1098-16842).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-errors" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2014-06-09']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-errors-abstract" />
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-7718-branch-7718-errors-abstract" abstract="true">
+      <sch:assert id="a-1098-7737-branch-7718" test="not(cda:assignedEntity/cda:representedOrganization) or cda:assignedEntity/cda:representedOrganization[count(cda:telecom) &gt; 0]">The representedOrganization, if present, SHALL contain at least one [1..*] telecom (CONF:1098-7737).</sch:assert>
+      <sch:assert id="a-1098-7736-branch-7718" test="not(cda:assignedEntity/cda:representedOrganization) or cda:assignedEntity/cda:representedOrganization[count(cda:addr) &gt; 0]">The representedOrganization, if present, SHALL contain at least one [1..*] addr (CONF:1098-7736).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-7718-branch-7718-errors" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2014-06-09']]/cda:performer[cda:assignedEntity[cda:id][cda:addr][cda:telecom]]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-7718-branch-7718-errors-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.124-errors">
@@ -1771,6 +1795,7 @@ Schematron generated from Trifolia on 12/11/2025
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.34.3.12-2019-04-01-errors">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.34.3.12-2019-04-01-errors-abstract" abstract="true">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-errors-abstract" />
       <sch:assert id="a-4420-147" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.34.3.12'])=1">SHALL contain exactly one [1..1] templateId (CONF:4420-147) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.34.3.12" (CONF:4420-148).</sch:assert>
       <sch:assert id="a-4420-149" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4420-149).</sch:assert>
       <sch:assert id="a-4420-152" test="count(cda:statusCode)=1">SHALL contain exactly one [1..1] statusCode (CONF:4420-152).</sch:assert>
@@ -2636,30 +2661,6 @@ Schematron generated from Trifolia on 12/11/2025
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.5.6-2019-10-01-errors" context="cda:author[cda:templateId[@root='2.16.840.1.113883.10.20.22.5.6' and @extension='2019-10-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.5.6-2019-10-01-errors-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-errors">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-errors-abstract" abstract="true">
-      <sch:assert id="a-4515-7654" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14'][@extension='2022-06-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4515-7654) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.14" (CONF:4515-10521). SHALL contain exactly one [1..1] @extension="2022-06-01" (CONF:4515-32506).</sch:assert>
-      <sch:assert id="a-4515-7656" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4515-7656).</sch:assert>
-      <sch:assert id="a-4515-7661" test="count(cda:statusCode)=1">SHALL contain exactly one [1..1] statusCode (CONF:4515-7661).</sch:assert>
-      <sch:assert id="a-4515-7704" test="not(cda:specimen) or cda:specimen[count(cda:specimenRole)=1]">The specimen, if present, SHALL contain exactly one [1..1] specimenRole (CONF:4515-7704).</sch:assert>
-      <sch:assert id="a-4515-7652" test="@classCode='PROC'">SHALL contain exactly one [1..1] @classCode="PROC" Procedure (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:4515-7652).</sch:assert>
-      <sch:assert id="a-4515-7653" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:4515-7653).</sch:assert>
-      <sch:assert id="a-4515-7655" test="count(cda:id) &gt; 0">SHALL contain at least one [1..*] id (CONF:4515-7655).</sch:assert>
-      <sch:assert id="a-4515-19206-c" test="count(cda:code/cda:originalText/cda:reference[@value])=0 or starts-with(cda:code/cda:originalText/cda:reference/@value, '#')">This reference/@value **SHALL** begin with a '#' and **SHALL** point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:4515-19206).</sch:assert>
-      <sch:assert id="a-4515-7890-c" test="not(testable)">MethodCode **SHALL NOT** conflict with the method inherent in Procedure / code (CONF:4515-7890).</sch:assert>
-      <sch:assert id="a-4515-16842-c" test="not(tested)">This specimen is for representing specimens obtained from a procedure (CONF:4515-16842).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-errors" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2022-06-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-errors-abstract" />
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-7718-branch-7718-errors-abstract" abstract="true">
-      <sch:assert id="a-4515-7737-branch-7718" test="not(cda:assignedEntity/cda:representedOrganization) or cda:assignedEntity/cda:representedOrganization[count(cda:telecom) &gt; 0]">The representedOrganization, if present, SHALL contain at least one [1..*] telecom (CONF:4515-7737).</sch:assert>
-      <sch:assert id="a-4515-7736-branch-7718" test="not(cda:assignedEntity/cda:representedOrganization) or cda:assignedEntity/cda:representedOrganization[count(cda:addr) &gt; 0]">The representedOrganization, if present, SHALL contain at least one [1..*] addr (CONF:4515-7736).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-7718-branch-7718-errors" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2022-06-01']]/cda:performer[cda:assignedEntity[cda:id][cda:addr][cda:telecom]]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-7718-branch-7718-errors-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.41-2022-06-01-errors">
@@ -3787,7 +3788,7 @@ Schematron generated from Trifolia on 12/11/2025
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.34.2.27-2025-08-01-errors-abstract" abstract="true">
       <sch:assert id="a-5564-28804" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.34.2.27'][@extension='2025-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-28804) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.34.2.27" (CONF:5564-28805). SHALL contain exactly one [1..1] @extension="2025-08-01" (CONF:5564-32862).</sch:assert>
       <sch:assert id="a-5564-28806" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:5564-28806).</sch:assert>
-      <sch:assert id="a-5564-30768-c" test="((count(@nullFlavor)=1) or (count(cda:entry[count(cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.132'][@extension='2022-06-01']])=1]) &gt; 0)) and  (not((count(@nullFlavor)=1) and  (count(cda:entry) &gt; 0)))">SHALL contain at least one [1..*] entry (CONF:5564-30768) such that it SHALL contain exactly one [1..1] Health Concern Act (NHCS V4) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.34.3.67:2025-08-01) (CONF:5564-30769).</sch:assert>
+      <sch:assert id="a-5564-30768-c" test="((count(@nullFlavor)=1) or (count(cda:entry[count(cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.34.3.67'][@extension='2025-08-01']])=1]) &gt; 0)) and  (not((count(@nullFlavor)=1) and  (count(cda:entry) &gt; 0)))">SHALL contain at least one [1..*] entry (CONF:5564-30768) such that it SHALL contain exactly one [1..1] Health Concern Act (NHCS V4) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.34.3.67:2025-08-01) (CONF:5564-30769).</sch:assert>
       <sch:assert id="a-5564-28807" test="cda:code[@code='75310-3']">This code SHALL contain exactly one [1..1] @code="75310-3" Health concerns document (CONF:5564-28807).</sch:assert>
       <sch:assert id="a-5564-28808" test="cda:code[@codeSystem='2.16.840.1.113883.6.1']">This code SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.1" (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:5564-28808).</sch:assert>
       <sch:assert id="a-5564-28809" test="count(cda:title)=1">SHALL contain exactly one [1..1] title (CONF:5564-28809).</sch:assert>
@@ -4010,7 +4011,7 @@ Schematron generated from Trifolia on 12/11/2025
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.34.3.67-2025-08-01-errors">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.34.3.67-2025-08-01-errors-abstract" abstract="true">
-      <sch:assert id="a-5564-30752" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.22.4.132'][@extension='2022-06-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-30752) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.132" (CONF:5564-30753). SHALL contain exactly one [1..1] @extension="2022-06-01" (CONF:5564-32861).</sch:assert>
+      <sch:assert id="a-5564-30752" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.34.3.67'][@extension='2025-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:5564-30752) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.34.3.67" (CONF:5564-30753). SHALL contain exactly one [1..1] @extension="2025-08-01" (CONF:5564-32861).</sch:assert>
       <sch:assert id="a-5564-30758" test="count(cda:statusCode)=1">SHALL contain exactly one [1..1] statusCode (CONF:5564-30758).</sch:assert>
       <sch:assert id="a-5564-32310" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:5564-32310).</sch:assert>
       <sch:assert id="a-5564-32759" test="not(cda:reference) or cda:reference[count(cda:externalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.115' and @extension='2014-06-09']])=1]">The reference, if present, SHALL contain exactly one [1..1] External Document Reference (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.115:2014-06-09) (CONF:5564-32759).</sch:assert>
@@ -4208,6 +4209,29 @@ Schematron generated from Trifolia on 12/11/2025
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.113-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.113']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.113-warnings-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-warnings">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-warnings-abstract" abstract="true">
+      <sch:assert id="a-1098-19203" test="cda:code[count(cda:originalText)=1]">This code SHOULD contain zero or one [0..1] originalText (CONF:1098-19203).</sch:assert>
+      <sch:assert id="a-1098-19204" test="not(cda:code/cda:originalText) or cda:code/cda:originalText[count(cda:reference)=1]">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:1098-19204).</sch:assert>
+      <sch:assert id="a-1098-19205" test="not(cda:code/cda:originalText/cda:reference) or cda:code/cda:originalText/cda:reference[@value]">The reference, if present, SHOULD contain zero or one [0..1] @value (CONF:1098-19205).</sch:assert>
+      <sch:assert id="a-1098-19207-c" test="count(cda:code[@codeSystem])=0 or cda:code[@codeSystem='2.16.840.1.113883.6.1'] or cda:code[@codeSystem='2.16.840.1.113883.6.96'] or cda:code[@codeSystem='2.16.840.1.113883.6.12'] or cda:code[@codeSystem='2.16.840.1.113883.6.104'] or cda:code[@codeSystem='2.16.840.1.113883.6.4'] or cda:code[@codeSystem='2.16.840.1.113883.6.13']">This @code **SHOULD** be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96), and **MAY** be selected from CPT (CodeSystem: 2.16.840.1.113883.6.12) or ICD-10-PCS (CodeSystem: 2.16.840.1.113883.6.4) or CDT-2 (Code System: 2.16.840.1.113883.6.13) (CONF:1098-19207).</sch:assert>
+      <sch:assert id="a-1098-7662" test="count(cda:effectiveTime)=1">SHOULD contain zero or one [0..1] effectiveTime (CONF:1098-7662).</sch:assert>
+      <sch:assert id="a-1098-7683" test="count(cda:targetSiteCode) &gt; 0">SHOULD contain zero or more [0..*] targetSiteCode, which SHALL be selected from ValueSet Body Site Value Set urn:oid:2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:1098-7683).</sch:assert>
+      <sch:assert id="a-1098-7716" test="not(cda:specimen/cda:specimenRole) or cda:specimen/cda:specimenRole[count(cda:id) &gt; 0]">This specimenRole SHOULD contain zero or more [0..*] id (CONF:1098-7716).</sch:assert>
+      <sch:assert id="a-1098-7718" test="count(cda:performer[count(cda:assignedEntity[count(cda:id) &gt; 0][count(cda:addr) &gt; 0][count(cda:telecom) &gt; 0])=1]) &gt; 0">SHOULD contain zero or more [0..*] performer (CONF:1098-7718) such that it SHALL contain exactly one [1..1] assignedEntity (CONF:1098-7720). This assignedEntity SHALL contain at least one [1..*] id (CONF:1098-7722). This assignedEntity SHALL contain at least one [1..*] addr (CONF:1098-7731). This assignedEntity SHALL contain at least one [1..*] telecom (CONF:1098-7732).</sch:assert>
+      <sch:assert id="a-1098-32479" test="count(cda:author[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.119']]) &gt; 0">SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-32479).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-warnings" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2014-06-09']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-warnings-abstract" />
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-7718-branch-7718-warnings-abstract" abstract="true">
+      <sch:assert id="a-1098-7733-branch-7718" test="not(cda:assignedEntity) or cda:assignedEntity[count(cda:representedOrganization)=1]">This assignedEntity SHOULD contain zero or one [0..1] representedOrganization (CONF:1098-7733).</sch:assert>
+      <sch:assert id="a-1098-7734-branch-7718" test="not(cda:assignedEntity/cda:representedOrganization) or cda:assignedEntity/cda:representedOrganization[count(cda:id) &gt; 0]">The representedOrganization, if present, SHOULD contain zero or more [0..*] id (CONF:1098-7734).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-7718-branch-7718-warnings" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2014-06-09']]/cda:performer[cda:assignedEntity[cda:id][cda:addr][cda:telecom]]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-7718-branch-7718-warnings-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.124-warnings">
@@ -4808,6 +4832,7 @@ Schematron generated from Trifolia on 12/11/2025
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.34.3.12-2019-04-01-warnings">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.34.3.12-2019-04-01-warnings-abstract" abstract="true">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2014-06-09-warnings-abstract" />
       <sch:assert id="a-4420-150" test="cda:code[@code]">This code SHOULD contain zero or one [0..1] @code (CONF:4420-150).</sch:assert>
       <!--No schematron defined for primitive constraint 163798 on template 11583-->
       <sch:assert id="a-4420-770-c" test="not(tested)">This @code SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) (CONF:4420-770).</sch:assert>
@@ -5326,30 +5351,6 @@ Schematron generated from Trifolia on 12/11/2025
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.5.6-2019-10-01-20-branch-20-warnings" context="cda:author[cda:templateId[@root='2.16.840.1.113883.10.20.22.5.6' and @extension='2019-10-01']]/cda:assignedAuthor/cda:id[@root='2.16.840.1.113883.4.6']">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.5.6-2019-10-01-20-branch-20-warnings-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-warnings">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-warnings-abstract" abstract="true">
-      <sch:assert id="a-4515-19203" test="cda:code[count(cda:originalText)=1]">This code SHOULD contain zero or one [0..1] originalText (CONF:4515-19203).</sch:assert>
-      <sch:assert id="a-4515-19204" test="not(cda:code/cda:originalText) or cda:code/cda:originalText[count(cda:reference)=1]">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:4515-19204).</sch:assert>
-      <sch:assert id="a-4515-19205" test="not(cda:code/cda:originalText/cda:reference) or cda:code/cda:originalText/cda:reference[@value]">The reference, if present, SHOULD contain zero or one [0..1] @value (CONF:4515-19205).</sch:assert>
-      <sch:assert id="a-4515-7716" test="not(cda:specimen/cda:specimenRole) or cda:specimen/cda:specimenRole[count(cda:id) &gt; 0]">This specimenRole SHOULD contain zero or more [0..*] id (CONF:4515-7716).</sch:assert>
-      <sch:assert id="a-4515-7718" test="count(cda:performer[count(cda:assignedEntity[count(cda:id) &gt; 0][count(cda:addr) &gt; 0][count(cda:telecom) &gt; 0])=1]) &gt; 0">SHOULD contain zero or more [0..*] performer (CONF:4515-7718) such that it SHALL contain exactly one [1..1] assignedEntity (CONF:4515-7720). This assignedEntity SHALL contain at least one [1..*] id (CONF:4515-7722). This assignedEntity SHALL contain at least one [1..*] addr (CONF:4515-7731). This assignedEntity SHALL contain at least one [1..*] telecom (CONF:4515-7732).</sch:assert>
-      <sch:assert id="a-4515-32479" test="count(cda:author[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.119']]) &gt; 0">SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:4515-32479).</sch:assert>
-      <sch:assert id="a-4515-19207-c" test="count(cda:code[@codeSystem])=0 or cda:code[@codeSystem='2.16.840.1.113883.6.1'] or cda:code[@codeSystem='2.16.840.1.113883.6.96'] or cda:code[@codeSystem='2.16.840.1.113883.6.12'] or cda:code[@codeSystem='2.16.840.1.113883.6.104'] or cda:code[@codeSystem='2.16.840.1.113883.6.4'] or cda:code[@codeSystem='2.16.840.1.113883.6.13']">This @code SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) or CPT (CodeSystem: 2.16.840.1.113883.6.12) or ICD-10-PCS (CodeSystem: 2.16.840.1.113883.6.4) or HCPCS (Code System: 2.16.840.1.113762.1.4.1247.9) or CDT-2 (Code System: 2.16.840.1.113883.6.13) (CONF:4515-19207).</sch:assert>
-      <sch:assert id="a-4515-7662" test="count(cda:effectiveTime)=1">SHOULD contain zero or one [0..1] effectiveTime (CONF:4515-7662).</sch:assert>
-      <sch:assert id="a-4515-7683" test="count(cda:targetSiteCode) &gt; 0">SHOULD contain zero or more [0..*] targetSiteCode, which SHALL be selected from ValueSet Body Site Value Set urn:oid:2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:4515-7683).</sch:assert>
-      <sch:assert id="a-4515-32984-c" test="count(cda:code[@codeSystem])=0 or cda:code[@codeSystem='2.16.840.1.113883.6.1'] or cda:code[@codeSystem='2.16.840.1.113883.6.96'] or cda:code[@codeSystem='2.16.840.1.113883.6.12'] or cda:code[@codeSystem='2.16.840.1.113883.6.104'] or cda:code[@codeSystem='2.16.840.1.113883.6.4'] or cda:code[@codeSystem='2.16.840.1.113883.6.13']">If the Intervention Procedure is a Social Determinant of Health Intervention, the procedure code **SHOULD** be selected from ValueSet [Social Determinant of Health Procedures](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1196.789/expansion) **DYNAMIC** (CONF:4515-32984).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-warnings" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2022-06-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-warnings-abstract" />
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-7718-branch-7718-warnings-abstract" abstract="true">
-      <sch:assert id="a-4515-7733-branch-7718" test="not(cda:assignedEntity) or cda:assignedEntity[count(cda:representedOrganization)=1]">This assignedEntity SHOULD contain zero or one [0..1] representedOrganization (CONF:4515-7733).</sch:assert>
-      <sch:assert id="a-4515-7734-branch-7718" test="not(cda:assignedEntity/cda:representedOrganization) or cda:assignedEntity/cda:representedOrganization[count(cda:id) &gt; 0]">The representedOrganization, if present, SHOULD contain zero or more [0..*] id (CONF:4515-7734).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-7718-branch-7718-warnings" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.14' and @extension='2022-06-01']]/cda:performer[cda:assignedEntity[cda:id][cda:addr][cda:telecom]]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.14-2022-06-01-7718-branch-7718-warnings-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.22.4.41-2022-06-01-warnings">

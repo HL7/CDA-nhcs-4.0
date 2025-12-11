@@ -2210,10 +2210,10 @@
             </table>
           </text>
           <entry>
-            <!--  [C-CDA] Health Concern Act (V3)  -->
+            <!--  [Updated C-CDA] Health Concern Act (NHCS V4)  -->
             <!--  Concern: Community Acquired Pneumonia  -->
             <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.67" extension="2025-08-01"/>
               <id root="63c5e137-3024-46cc-951f-885ec69d9030"/>
               <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
               <!--  This Health Concern has a statusCode of active because it is an active concern  -->
@@ -2258,10 +2258,10 @@
             </act>
           </entry>
           <entry>
-            <!--  [C-CDA] Health Concern Act (V3)  -->
+            <!--  [Updated C-CDA] Health Concern Act (NHCS V4)  -->
             <!--  Concern: Memory impairment  -->
             <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
+              <templateId root="2.16.840.1.113883.10.20.34.3.67" extension="2025-08-01"/>
               <id root="63c5e137-3024-46cc-951f-885ec69d9030"/>
               <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
               <!--  This Health Concern has a statusCode of active because it is an active concern  -->
