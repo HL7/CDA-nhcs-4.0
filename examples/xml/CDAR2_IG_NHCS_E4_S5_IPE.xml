@@ -56,7 +56,7 @@
       <!--  Patient's Medicare HIC Number  -->
       <id root="2.16.840.1.113883.4.572" extension="123456789"/>
       <!--  Addr HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119  -->
-      <!--  USCDI-v3 Patient Demographics/Information: Current Address  -->
+      <!--  USCDI V3.1Patient Demographics/Information: Current Address  -->
       <addr use="HP">
         <streetAddressLine>124 Any Street</streetAddressLine>
         <city>Anyville</city>
@@ -65,7 +65,7 @@
         <postalCode>97812</postalCode>
         <country>US</country>
       </addr>
-      <!--  USCDI-v3 Patient Demographics/Information: Previous Address  -->
+      <!--  USCDI V3.1Patient Demographics/Information: Previous Address  -->
       <addr use="H">
         <streetAddressLine>1141 W MAIN AVE</streetAddressLine>
         <city>CHICAGO</city>
@@ -77,14 +77,14 @@
           <high value="20110130"/>
         </useablePeriod>
       </addr>
-      <!--  USCDI-v3 Patient Demographics/Information: Email Address  -->
+      <!--  USCDI V3.1Patient Demographics/Information: Email Address  -->
       <telecom value="mailto:adam@diameterhealth.com" use="WP"/>
-      <!--  USCDI-v3 Patient Demographics/Information: Phone Number, Phone Number Type  -->
+      <!--  USCDI V3.1Patient Demographics/Information: Phone Number, Phone Number Type  -->
       <telecom value="tel:+1(565)867-5309" use="MC"/>
       <telecom use="HP" value="5551231234"/>
       <patient>
         <!--  SDWG reviewed and approved approach for recording a previous legal name and current legal name  -->
-        <!--  USCDI-v3 Patient Demographics/Information: First Name, Last Name, Middle Name (including middle initial), Name Suffix  -->
+        <!--  USCDI V3.1Patient Demographics/Information: First Name, Last Name, Middle Name (including middle initial), Name Suffix  -->
         <!--  Current legal (L) name  -->
         <name use="L">
           <given>Samantha</given>
@@ -92,7 +92,7 @@
           <family>Smith</family>
           <suffix>Jr</suffix>
         </name>
-        <!--  USCDI-v3 Patient Demographics/Information: Previous Name  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Previous Name  -->
         <name use="L">
           <given>SamanthaBell</given>
           <given>P.</given>
@@ -107,26 +107,26 @@
           </validTime>
         </name>
         <!--  Sex  -->
-        <!--  USCDI-v3 Patient Demographics/Information: Sex  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Sex  -->
         <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
         <!--  Date of Birth  -->
-        <!--  USCDI-v3 Patient Demographics/Information: Date of Birth  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Date of Birth  -->
         <birthTime value="19680607"/>
         <!--  Date of Death  -->
-        <!--  USCDI-v3 Patient Demographics/Information: Date of Death  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Date of Death  -->
         <sdtc:deceasedInd value="true"/>
         <sdtc:deceasedTime value="202400704"/>
         <!--  Patient Marital Status  -->
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
         <!--  Race  -->
-        <!--  USCDI-v3 Patient Demographics/Information: Race  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Race  -->
         <raceCode code="1002-5" displayName="American Indian or Alaska Native" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <sdtc:raceCode code="1012-4" displayName="Fort Sill Apache" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <!--  Ethnicity  -->
-        <!--  USCDI-v3 Patient Demographics/Information: Ethnicity  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Ethnicity  -->
         <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <!--  Use languageCommunication/languageCode/@nullFlavor="NA" as shown below  -->
-        <!--  USCDI-v3 Patient Demographics/Information: Preferred Language  -->
+        <!--  USCDI V3.1Patient Demographics/Information: Preferred Language  -->
         <languageCommunication>
           <languageCode code="eng"/>
           <!--  "eng" is ISO 639-2 alpha-3 code for "English"  -->
@@ -182,7 +182,7 @@
     <templateId root="2.16.840.1.113883.10.20.22.5.8" extension="2023-05-01"/>
     <!--  SHALL be from INDRoleclassCodes 2.16.840.1.113883.11.20.9.33  -->
     <associatedEntity classCode="PRS">
-      <!--  USCDI-v3 Patient Demographics/Information: Related Person's Relationship  -->
+      <!--  USCDI V3.1Patient Demographics/Information: Related Person's Relationship  -->
       <!--  classCode "PRS" represents personal relationship  -->
       <!--  Personal And Legal Relationship Role Type Value Set  -->
       <code code="MTH" codeSystem="2.16.840.1.113883.5.111"/>
@@ -196,7 +196,7 @@
       </addr>
       <!--  OPTIONAL TELECOM  -->
       <telecom value="tel:+1(555)555-2008" use="MC"/>
-      <!--  USCDI-v3 Patient Demographics/Information: Related Person's Name  -->
+      <!--  USCDI V3.1Patient Demographics/Information: Related Person's Name  -->
       <associatedPerson>
         <!--  REQUIRED US Realm Person Name Format  -->
         <name>
